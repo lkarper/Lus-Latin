@@ -27,16 +27,18 @@ const results2 = document.querySelector("#results2");
 //     });
 // };
 
-console.log(ls_a);
+
 
 const searchWord = () => {
-    for (let entry of ls_a) {
-        if (entry.key === inputBox.value) {
-            results.innerText = entry.key;
-            results2.innerText = entry.senses;
-            break;
-        } else {
-            results2.innerText = "Sorry, no results found"
+    for (let letter of ls) {
+        for (let entry of letter) {
+            if (entry.key === inputBox.value) {
+                results.innerText = entry.key;
+                results2.innerText = entry.senses;
+                break;
+            } else {
+                results2.innerText = "Sorry, no results found"
+            }
         }
     }
 }
