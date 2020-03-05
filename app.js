@@ -7,7 +7,7 @@ const results2 = document.querySelector("#results2");
 const searchWord = () => {
     for (let entry of data) {
         if (entry.key === inputBox.value) {
-            results.innerText = entry.key;
+            wordSearched.innerText = entry.key;
             results2.innerText = entry.senses;
             break;
         } else {
