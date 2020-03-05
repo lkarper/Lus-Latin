@@ -15,7 +15,7 @@ const searchWord = () => {
         }
     }
 }
-document.addEventListener('keydown', (event) => {
+inputBox.addEventListener('keydown', (event) => {
     if (event.keyCode === 13) {
         searchWord();
     }
