@@ -12,7 +12,7 @@ function exactMatch() {
     wordSearched2.classList.remove("hidden");
     wordSearched2.innerText = "Exact match sought for:";
     searchResults2.classList.remove("hidden");
-    const word = data.find(word => word.key === inputBox.value);
+    const word = data.find(word => word.key.toLowerCase() === inputBox.value.toLowerCase());
     if (!word) {
         wordSearched.innerText = inputBox.value;
         results.innerHTML = "<p>Sorry, exact match not found.</p>";
@@ -29,7 +29,7 @@ function searchWord() {
     wordSearched.innerText = inputBox.value;
     const searchResults = [];
     for (let entry of data) {
-        if (entry.key.includes(inputBox.value)) {
+        if (entry.key.toLowerCase().includes(inputBox.value.toLowerCase())) {
             searchResults.push(entry);
         }
     }
