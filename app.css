@@ -1,0 +1,11 @@
+#word-searched {
+    text-decoration: underline;
+}
+
+#search-results {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
