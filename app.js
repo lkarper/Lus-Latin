@@ -15,4 +15,10 @@ const searchWord = () => {
         }
     }
 }
+document.addEventListener('keydown', (event) => {
+    if (event.keyCode === 13) {
+        searchWord();
+    }
+});
+
 submitButton.addEventListener('click', searchWord);
