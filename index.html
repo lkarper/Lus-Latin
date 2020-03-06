@@ -10,17 +10,20 @@
   <header><h1>Lu's Latin</h1></header>
   <input type="text" id="inputBox">
   <button id="submitButton">Search</button>
+  <button id="exactMatch">Find Exact Match</button>
+  <button id="clear">Clear Search Results</button>
 
   <section id="translation">
-    <h2 id="wordSearched"></h2>
-    <p id="results"></p>
-    <p id="results2"></p>
+    <h2 class="hidden" id="word-searched">Word Searched: <h2 id="wordSearched"></h2></h2>
+    <h2 class="hidden" id="search-results">Search Results:</h2>
+    <section id="results"></section>
   </section>
 
   <script
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  <script src="LS-all.json"></script>
   <script src="app.js"></script>
 </body>
 </html>
