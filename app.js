@@ -6,12 +6,12 @@ const wordSearched2 = document.querySelector('#word-searched');
 const searchResults2 = document.querySelector('#search-results');
 const findExactMatch = document.querySelector('#exactMatch');
 const clearResults = document.querySelector('#clear');
+const resultsField = document.querySelector('#results-field');
 
 function exactMatch() {
     results.innerText = '';
-    wordSearched2.classList.remove("hidden");
+    resultsField.classList.remove("hidden");
     wordSearched2.innerText = "Exact match sought for:";
-    searchResults2.classList.remove("hidden");
     const word = data.find(word => word.key.toLowerCase() === inputBox.value.toLowerCase());
     if (!word) {
         wordSearched.innerText = inputBox.value;
@@ -24,8 +24,7 @@ function exactMatch() {
 
 function searchWord() {
     results.innerText = '';
-    wordSearched2.classList.remove("hidden");
-    searchResults2.classList.remove("hidden");
+    resultsField.classList.remove("hidden");
     wordSearched.innerText = inputBox.value;
     const searchResults = [];
     for (let entry of data) {
@@ -50,8 +49,7 @@ function clear () {
     wordSearched.innerText = '';
     results.innerText = '';
     inputBox.value = '';
-    wordSearched2.classList.add("hidden");
-    searchResults2.classList.add("hidden");
+    resultsField.classList.add("hidden");
 };
 
 inputBox.addEventListener('keydown', (event) => {
