@@ -1,11 +1,73 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+html {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url(https://upload.wikimedia.org/wikipedia/commons/c/c5/Cicer%C3%B3n_denuncia_a_Catilina%2C_por_Cesare_Maccari.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+h1 {
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+h2 {
+    font-weight: 300;
+}
+
 #word-searched {
     text-decoration: underline;
+    
 }
 
 #search-results {
     text-decoration: underline;
 }
 
+#search-tools {
+    color: black;
+    margin-left: 30px;
+}
+
+button {
+    color: black;
+    text-shadow: none;
+}
+
+#input-box {
+    color: black;
+    text-shadow: none;
+}
+
+
 .hidden {
     display: none;
+}
+
+
+section {
+    border: 2px solid white;
+    text-shadow: 1px 1px black;
+    color: white;
+    padding: 16px;
+    margin: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6));
+}
+
+p {
+    border-bottom: 2px solid white;
+    padding-bottom: 20px;
+}
+  
+@media screen and (min-width: 850px) {
+    
 }

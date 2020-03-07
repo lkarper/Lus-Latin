@@ -3,26 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="app.css">
-  <title>Lu's Latin</title>
+  <title>Lu's Latin-Dictionary</title>
 </head>
 <body>
-  <header><h1>Lu's Latin</h1></header>
-  <input type="text" id="inputBox">
-  <button id="submitButton">Search</button>
-  <button id="exactMatch">Find Exact Match</button>
-  <button id="clear">Clear Search Results</button>
 
-  <section id="translation">
-    <h2 class="hidden" id="word-searched">Word Searched: <h2 id="wordSearched"></h2></h2>
-    <h2 class="hidden" id="search-results">Search Results:</h2>
-    <section id="results"></section>
+  <div id="search-tools">
+    <header><h1>Lu's Latin</h1></header>
+    <input type="text" id="inputBox">
+    <button id="submitButton">Search</button>
+    <button id="exactMatch">Find Exact Match</button>
+    <button id="clear">Clear Search Results</button>
+  </div>
+
+  <section class="hidden" id="results-field">    
+    <h2 id="word-searched">Word Searched: <h2 id="wordSearched"></h2></h2>
+    <h2 id="search-results">Search Results:</h2>
+    <div id="results"></div>
   </section>
 
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
   <script src="LS-all.json"></script>
   <script src="app.js"></script>
 </body>
