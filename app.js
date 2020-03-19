@@ -3,7 +3,6 @@ const inputBox = document.querySelector("#inputBox");
 const wordSearched = document.querySelector("#wordSearched");
 const results = document.querySelector("#results");
 const wordSearched2 = document.querySelector('#word-searched');
-const searchResults2 = document.querySelector('#search-results');
 const findExactMatch = document.querySelector('#exactMatch');
 const clearResults = document.querySelector('#clear');
 const resultsField = document.querySelector('#results-field');
@@ -24,6 +23,7 @@ function exactMatch() {
 
 function searchWord() {
     results.innerText = '';
+    wordSearched2.innerText='Word Searched:';
     resultsField.classList.remove("hidden");
     wordSearched.innerText = inputBox.value;
     const searchResults = [];
@@ -45,7 +45,7 @@ function searchWord() {
     }
 }
 
-function clear () {
+function clear() {
     wordSearched.innerText = '';
     results.innerText = '';
     inputBox.value = '';
