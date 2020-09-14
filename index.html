@@ -9,21 +9,22 @@
   <title>Lu's Latin-Dictionary</title>
 </head>
 <body>
-
   <div id="search-tools">
-    <header><h1>Lu's Latin</h1></header>
+    <header>
+      <h1>Lu's Latin</h1>
+    </header>
     <input type="text" id="inputBox">
     <button id="submitButton">Search</button>
     <button id="exactMatch">Find Exact Match</button>
     <button id="clear">Clear Search Results</button>
   </div>
-
-  <section class="hidden" id="results-field">    
-    <h2 id="word-searched">Word Searched: <h2 id="wordSearched"></h2></h2>
-    <h2 id="search-results">Search Results:</h2>
-    <div id="results"></div>
-  </section>
-
+  <main>
+    <section class="hidden" id="results-field">    
+      <h2 id="word-searched">Word Searched: <h2 id="wordSearched"></h2></h2>
+      <h2 id="search-results">Search Results:</h2>
+      <div id="results"></div>
+    </section>
+  </main>
   <script src="LS-all.json"></script>
   <script src="app.js"></script>
 </body>
